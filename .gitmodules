@@ -13,3 +13,6 @@
 [submodule ".doom.d"]
 	path = .doom.d
 	url = https://github.com/j624364/.doom.d.git
+[submodule "doom-emacs"]
+	path = .emacs.d
+	url = https://github.com/hlissner/doom-emacs.git
