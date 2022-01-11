@@ -1,0 +1,15 @@
+[submodule ".config/fish"]
+	path = .config/fish
+	url = https://github.com/j624364/fish.git
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = https://github.com/j624364/nvim.git
+[submodule ".config/i3"]
+	path = .config/i3
+	url = https://github.com/j624364/i3.git
+[submodule ".config/alacritty"]
+	path = .config/alacritty
+	url = https://github.com/j624364/alacritty.git
+[submodule ".doom.d"]
+	path = .doom.d
+	url = https://github.com/j624364/.doom.d.git
