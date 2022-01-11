@@ -1,0 +1,77 @@
+# screenshots
+*.png
+
+# use the de/wm of system maybe change later
+.xinitrc
+.icons
+.config/picom.conf
+.config/qt5ct/qt5ct.conf
+.ICEauthority
+.Xauthority
+.Xresources
+.config/nitrogen
+
+# main folders
+Documents/
+Music/
+Public/
+Templates/
+Desktop/
+Downloads/
+Pictures/
+Repos/
+Videos/
+opt/
+
+# general
+.config/discord/
+.vim/
+.viminfo
+.notion-enhancer
+.bash_history
+.npm/
+.nuget/
+.pki/
+.python_history
+.w3m/
+.xsession-errors
+.xsession-errors.old
+.local/
+.dmrc
+.dotnet/
+.gtkrc-2.0
+.mozilla/
+.eawm.logd/
+.gnupg/
+.lesshst
+.nanorc
+.rustup/
+.cargo/
+.cache/
+.config/xfce4
+.config/xed
+.config/wmderland
+.config/systemd
+.config/pulse
+.config/nvim-qt
+.config/notion-app-enhanced
+.config/chromium
+.config/Thunar
+.config/autostart
+.config/Joplin
+.config/joplin-desktop
+.config/libreoffice
+.config/mimeapps.list
+.config/dconf/
+.config/Electron
+.config/bpytop/error.log
+.config/pavucontrol.ini
+
+# eneavouros
+.config/EOS-greeter.conf
+.config/EOS-initial-wallpaper.XFCE
+.config/eos-update-notifier.first_init
+
+# passwords / credentials
+.git-credentials
+.config/Bitwarden
