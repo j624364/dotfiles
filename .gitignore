@@ -119,6 +119,20 @@ opt/
 .config/webengineurlinterceptoradblockrc
 .config/xsettingsd/
 .kde4/
+.config/KDE/
+.config/arkrc
+.config/dolphinrc
+
+# gtk
+.config/gtk-3.0/
+.config/gtk-4.0/settings.ini
+.config/gtkrc
+.config/gtkrc-2.0
+.config/gtk-2.0/
+
+# user dirs
+.config/user-dirs.dirs
+.config/user-dirs.locale
 
 # eneavouros
 .config/EOS-greeter.conf
