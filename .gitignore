@@ -22,6 +22,11 @@ Pictures/
 Repos/
 Videos/
 opt/
+snap/
+.paradoxlauncher/
+.steam/
+.steampid
+.steampath
 
 # general
 .config/discord/
@@ -36,6 +41,7 @@ opt/
 .w3m/
 .xsession-errors
 .xsession-errors.old
+.Xclients
 .local/
 .dmrc
 .dotnet/
@@ -48,6 +54,8 @@ opt/
 .rustup/
 .cargo/
 .cache/
+.zhistory
+.zcompdump
 .config/xfce4
 .config/xed
 .config/wmderland
@@ -122,6 +130,18 @@ opt/
 .config/KDE/
 .config/arkrc
 .config/dolphinrc
+.config/falkon
+.config/kconf_updaterc.lock
+.config/kmenueditrc
+.config/knfsshare
+.config/manjaro-hello.json
+.config/manjaro/
+.config/matray/
+.config/pamac/
+.config/plasmanotifyrc
+.config/powerdevilrc
+.config/trashrc
+.dir_colors
 
 # gtk
 .config/gtk-3.0/
