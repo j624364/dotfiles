@@ -87,5 +87,3 @@ _open_files_for_editing() {
 
 export PATH="$HOME/opt/cross/bin:$PATH"
 
-
-source /home/joe/.config/broot/launcher/bash/br
