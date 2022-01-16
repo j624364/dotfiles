@@ -74,6 +74,8 @@ snap/
 .config/Electron
 .config/bpytop/error.log
 .config/pavucontrol.ini
+.config/partitionmanagerrc
+.config/xdg-desktop-portal-kderc
 
 # kde (update when used)
 .config/kdedefaults/
