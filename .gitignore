@@ -76,6 +76,9 @@ snap/
 .config/pavucontrol.ini
 .config/partitionmanagerrc
 .config/xdg-desktop-portal-kderc
+.minecraft/
+.java/
+.config/cef_user_data/
 
 # kde (update when used)
 .config/kdedefaults/
