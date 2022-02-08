@@ -3,7 +3,7 @@
 # startup apps
 
 # compositor
-picom &
+# picom &
 
 # network manager
 nm-applet &
