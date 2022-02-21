@@ -151,6 +151,32 @@ Arduino/
 .arduino15/package_index.json
 .arduino15/package_index.json.sig
 .arduino15/staging/
+.config/flameshotrc
+.config/katemetainfos
+.config/katerc
+.config/katevirc
+.config/kcalcrc
+.config/kdialogrc
+.config/kgpgrc
+.config/kioslaverc
+.config/kolourpaintrc
+.config/kprivacyrc
+.config/ktuberlingrc
+.config/libfm/
+.config/okularrc
+.config/soffice.binrc
+.config/sweeperrc
+.config/vlc
+.java/
+.mono/
+.nmcli-history
+.pulse-cookie
+.config/emaildefaults
+.config/drkonqirc
+.config/Typora
+.config/baloofileinformationrc
+.config/goneovim/sessions/
+.goneovim/sessions/
 
 # gtk
 .config/gtk-3.0/

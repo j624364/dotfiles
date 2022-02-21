@@ -1,0 +1,16 @@
+[Editor]
+FileOpenCmd = ":open"
+LineToScroll = 1
+DisableLigatures = false
+Clipboard = true
+SmoothScroll = true
+Transparent = 1.0
+
+[Cursor]
+SmoothMove = true
+Duration = 35
+
+[Markdown]
+Disable = false
+CodeHlStyle = "github"
+
