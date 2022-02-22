@@ -15,6 +15,6 @@ if status is-interactive
 
 	alias py="pypy3"
 
-	set -gx PATH $PATH ~/opt/cross/bin
+	set -gx PATH $PATH ~/opt/cross/bin ~/.dotnet/tools
 	set EDITOR nvim /usr/bin/nvim
 end

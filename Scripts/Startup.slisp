@@ -1,0 +1,22 @@
+(rem startup apps)
+
+(rem compositor)
+(rem (system-raw "picom &"))
+
+(rem network manager)
+(system-raw "nm-applet &")
+
+(rem wallpapers)
+(system-raw "nitrogen --restore &")
+
+(rem notifications)
+(system-raw "dbus-launch dunst --config ~/.config/dunst/dunstrc &")
+
+(rem settings)
+
+(rem load uk keyboard layout)
+(system-raw "setxkbmap gb")
+
+(rem turn numlock on)
+(system-raw "numlockx on")
+
