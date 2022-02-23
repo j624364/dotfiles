@@ -1,7 +1,6 @@
 function fish_greeting
 	echo ""
 	pfetch
-	echo ""
 end
 
 if status is-interactive
