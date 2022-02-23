@@ -1,6 +1,5 @@
 function fish_greeting
-	echo ""
-	pfetch
+	~/.config/pfetch/run.sh
 end
 
 if status is-interactive
