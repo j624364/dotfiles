@@ -1,5 +1,6 @@
 {
     "workbench.colorTheme": "Nord",
     "editor.lineNumbers": "relative",
+    "editor.wordWrap": "on",
     "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim"
 }
