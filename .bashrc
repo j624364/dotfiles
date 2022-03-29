@@ -139,3 +139,6 @@ ex ()
 export EDITOR=nvim
 export BROWSER=chromium
 
+alias setschoolproxy="export http_proxy=\"127.0.0.1:3128\";export https_proxy=\"127.0.0.1:3128\";export HTTP_PROXY=\"127.0.0.1:3128\";export HTTPS_PROXY=\"127.0.0.1:3128\""
+alias setnoproxy="export http_proxy=;export https_proxy=;export HTTP_PROXY=;export HTTPS_PROXY="
+
