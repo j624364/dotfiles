@@ -18,4 +18,7 @@ if status is-interactive
 
 	set -gx PATH $PATH ~/opt/cross/bin ~/.dotnet/tools
 	set EDITOR nvim /usr/bin/nvim
+
+	# set HTTP_PROXY "127.0.0.1:3128"
+	# set HTTPS_PROXY "127.0.0.1:3128"
 end
