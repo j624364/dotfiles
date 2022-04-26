@@ -16,29 +16,29 @@ def get_battery_status() -> str:
 
 def main():
     capacity = get_battery_capacity()
-    status = get_battery_status()
+    battery_status = get_battery_status()
 
-    prefix=""
+    status=""
     symbol=""
 
-    if status == "Charging":
-        prefix = ""
-    elif status == "Discharging":
-        prefix = ""
+    if battery_status == "Charging":
+        status = ""
+    elif battery_status == "Discharging":
+        status = ""
 
     if capacity == 100:
         symbol= ''
     elif capacity < 5:
-        label = ""
+        symbol = ""
     elif capacity < 45:
-        label = ""
+        symbol = ""
     elif capacity < 70:
-        label = ""
+        symbol = ""
     elif capacity < 100:
-        label = ""
+        symbol = ""
 
     space = "" # should be "" for i3blocks but " " for console
-    print(prefix, symbol, space, capacity, "%", sep="")
+    print(symbol, status, space, capacity, "%", sep="")
 
 if __name__=="__main__":
     main()
