@@ -20,3 +20,6 @@
 (rem turn numlock on)
 (system-raw "numlockx on")
 
+(rem remap caps lock to escape)
+(system-raw "setxkbmap -option caps:escape")
+
