@@ -4,7 +4,7 @@
 (rem (system-raw "picom &"))
 
 (rem network manager)
-(system-raw "nm-applet &")
+(rem (system-raw "nm-applet &"))
 
 (rem wallpapers)
 (system-raw "nitrogen --restore &")
