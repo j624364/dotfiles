@@ -46,6 +46,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
 beautiful.init(gears.filesystem.get_themes_dir() .. "nord/theme.lua")
+beautiful.get().wallpaper = "~/Backgrounds/1586853771_daniel-leone-v7datklzzaw-unsplash-modded.jpg"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "xterm"
