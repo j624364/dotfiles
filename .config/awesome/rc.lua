@@ -49,8 +49,8 @@ beautiful.init(gears.filesystem.get_themes_dir() .. "nord/theme.lua")
 beautiful.get().wallpaper = "~/Backgrounds/1586853771_daniel-leone-v7datklzzaw-unsplash-modded.jpg"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "xterm"
-editor = os.getenv("EDITOR") or "nano"
+terminal = "kitty"
+editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
 -- Default modkey.
