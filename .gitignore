@@ -21,6 +21,7 @@ Downloads/
 Pictures/
 Repos/
 Videos/
+Workspaces/
 opt/
 snap/
 .paradoxlauncher/
@@ -78,7 +79,25 @@ snap/
 .config/xdg-desktop-portal-kderc
 .minecraft/
 .java/
+.gnome/
 .config/cef_user_data/
+.arduino15/packages/
+.bashrc-temp
+.config/Code - OSS/
+.config/Code/
+.config/GIMP/
+.config/cantorrc
+.config/dragonplayerrc
+.config/eawm/
+.config/kazam/
+.config/menus/
+.config/obs-studio/
+.config/onlyoffice/
+.config/xp-pen-config/
+.openshot_qt/
+.templateengine/
+.vscode-oss/
+.vscode/
 
 # kde (update when used)
 .config/kdedefaults/
