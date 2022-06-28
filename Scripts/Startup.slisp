@@ -1,7 +1,7 @@
 (rem startup apps)
 
 (rem compositor)
-(rem (system-raw "picom &"))
+(system-raw "picom &")
 
 (rem network manager)
 (rem (system-raw "nm-applet &"))
