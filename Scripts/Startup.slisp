@@ -23,3 +23,5 @@
 (rem remap caps lock to escape)
 (system-raw "setxkbmap -option caps:escape")
 
+(system-raw "bash ~/Startup/dwm-bar/dwm_bar.sh &")
+
