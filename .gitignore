@@ -98,6 +98,7 @@ snap/
 .templateengine/
 .vscode-oss/
 .vscode/
+.arduino15/
 
 # kde (update when used)
 .config/kdedefaults/
