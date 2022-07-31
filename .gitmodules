@@ -16,3 +16,6 @@
 [submodule "Scripts/dwm-bar"]
 	path = Scripts/dwm-bar
 	url = https://github.com/j624364/dwm-bar.git
+[submodule ".config/helix"]
+	path = .config/helix
+	url = https://github.com/j624364/helix
