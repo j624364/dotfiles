@@ -9,6 +9,7 @@ if status is-interactive
 	alias ga="git add"
 	alias gc="git commit"
 	alias so="source ~/.config/fish/config.fish"
+	alias hx="helix"
 
 	alias runvalgrind="valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes"
 
