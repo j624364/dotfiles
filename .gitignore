@@ -29,6 +29,8 @@ snap/
 .steampid
 .steampath
 
+.config/kak/plugins/
+
 # general
 .config/discord/
 .vim/
