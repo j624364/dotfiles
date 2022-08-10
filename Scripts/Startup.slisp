@@ -25,5 +25,5 @@
 
 (system-raw "sxhkd &")
 
-(system-raw "slisp ~/Scripts/wallpaper_slideshow.slisp &")
+;(system-raw "slisp ~/Scripts/wallpaper_slideshow.slisp &")
 
