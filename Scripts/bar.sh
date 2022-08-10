@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+echo
+
 echo -n ""
 ~/.config/i3/scripts/disk
 
