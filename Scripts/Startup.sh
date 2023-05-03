@@ -3,13 +3,12 @@
 # startup apps
 
 # compositor
-# picom &
-
-# network manager
-nm-applet &
+picom &
 
 # wallpapers
 nitrogen --restore &
+
+~/Scripts/wallpaper_slideshow.sh &
 
 # notifications
 dbus-launch dunst --config ~/.config/dunst/dunstrc &
@@ -19,10 +18,15 @@ dbus-launch dunst --config ~/.config/dunst/dunstrc &
 # load uk keyboard layout
 setxkbmap gb
 
-# turn numlock on
+# keybind settings
 numlockx on
 
-# from i3
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-dex --autostart --environment i3
+setxkbmap -option caps:escape
 
+sxhkd &
+
+# turn wifi on
+nmcli radio wifi on
+
+# emacs daemon
+emacs --daemon --with-x-toolkit=lucid &

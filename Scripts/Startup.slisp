@@ -25,5 +25,7 @@
 
 (system-raw "sxhkd &")
 
-;(system-raw "slisp ~/Scripts/wallpaper_slideshow.slisp &")
+(system-raw "nmcli radio wifi on")
+
+(system-raw "slisp ~/Scripts/wallpaper_slideshow.sh &")
 
