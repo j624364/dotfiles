@@ -1,0 +1,15 @@
+#source "~/.config/kak/plugins/plug.kak/rc/plug.kak"
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+
+plug "abstractlyZach/nord.kak" %{
+    colorscheme nord
+}
+
+plug "danr/kakoune-easymotion"
+
+set-option global makecmd 'make -j8'
+
+add-highlighter global/ number-lines -relative
+add-highlighter global/ wrap
+add-highlighter global/ show-matching
+

@@ -21,12 +21,15 @@ Downloads/
 Pictures/
 Repos/
 Videos/
+Workspaces/
 opt/
 snap/
 .paradoxlauncher/
 .steam/
 .steampid
 .steampath
+
+.config/kak/plugins/
 
 # general
 .config/discord/
@@ -78,7 +81,26 @@ snap/
 .config/xdg-desktop-portal-kderc
 .minecraft/
 .java/
+.gnome/
 .config/cef_user_data/
+.arduino15/packages/
+.bashrc-temp
+.config/Code - OSS/
+.config/Code/
+.config/GIMP/
+.config/cantorrc
+.config/dragonplayerrc
+.config/eawm/
+.config/kazam/
+.config/menus/
+.config/obs-studio/
+.config/onlyoffice/
+.config/xp-pen-config/
+.openshot_qt/
+.templateengine/
+.vscode-oss/
+.vscode/
+.arduino15/
 
 # kde (update when used)
 .config/kdedefaults/

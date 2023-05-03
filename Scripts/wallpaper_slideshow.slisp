@@ -1,0 +1,10 @@
+#!/usr/bin/env slisp
+
+(define secs-in-minute 60)
+(define sleep-time (× secs-in-minute 2))
+
+(while true (
+	(ignore (system-raw "nitrogen --set-zoom-fill --random ~/Backgrounds/slideshow --save"))
+	(sleep sleep-time)
+))
+

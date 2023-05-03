@@ -1,10 +1,10 @@
 (rem startup apps)
 
 (rem compositor)
-(rem (system-raw "picom &"))
+(system-raw "picom &")
 
 (rem network manager)
-(system-raw "nm-applet &")
+(rem (system-raw "nm-applet &"))
 
 (rem wallpapers)
 (system-raw "nitrogen --restore &")
@@ -19,4 +19,11 @@
 
 (rem turn numlock on)
 (system-raw "numlockx on")
+
+(rem remap caps lock to escape)
+(system-raw "setxkbmap -option caps:escape")
+
+(system-raw "sxhkd &")
+
+;(system-raw "slisp ~/Scripts/wallpaper_slideshow.slisp &")
 

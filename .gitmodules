@@ -1,9 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/j624364/nvim.git
-[submodule ".config/i3"]
-	path = i3-endeavour-old
-	url = https://github.com/j624364/i3.git
 [submodule ".config/alacritty"]
 	path = .config/alacritty
 	url = https://github.com/j624364/alacritty.git
@@ -13,3 +10,9 @@
 [submodule "doom-emacs"]
 	path = .emacs.d
 	url = https://github.com/hlissner/doom-emacs.git
+[submodule "Scripts/dwm-bar"]
+	path = Scripts/dwm-bar
+	url = https://github.com/j624364/dwm-bar.git
+[submodule ".config/helix"]
+	path = .config/helix
+	url = https://github.com/j624364/helix
