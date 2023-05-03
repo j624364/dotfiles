@@ -8,7 +8,8 @@ picom &
 # wallpapers
 nitrogen --restore &
 
-~/Scripts/wallpaper_slideshow.sh &
+# not rn with dracula
+# ~/Scripts/wallpaper_slideshow.sh &
 
 # notifications
 dbus-launch dunst --config ~/.config/dunst/dunstrc &
