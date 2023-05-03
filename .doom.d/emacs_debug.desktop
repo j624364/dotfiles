@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=exwm debug
+Comment=Emacs Window Manager
+Exec=emacs --debug-init
+Type=Application
