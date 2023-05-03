@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+sh ~/Scripts/Startup.sh
+
 # for status bar
 ~/Scripts/bar_continue.sh &
 
