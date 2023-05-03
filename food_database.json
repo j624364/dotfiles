@@ -1,0 +1,182 @@
+{
+  "components": {
+    "macaronicheese":     { "name": "Macaroni Cheese",       "categories": [ "pasta" ], "_price": 0.0 },
+    "chicken&baconpasta": { "name": "Chicken & Bacon Pasta", "categories": [ "meat" ], "_price": 0.0 },
+    "cottagepie":         { "name": "Cottage Pie",           "categories": [], "_price": 0.0 },
+    "spaghettibolognese": { "name": "Spaghetti Bolognese",   "categories": [], "_price": 0.0 },
+    "spaghettimeatballs": { "name": "Spaghetti Meatballs",   "categories": [ "meat" ], "_price": 0.0 },
+    "tunapasta":          { "name": "Tuna Pasta",            "categories": [ "meat" ], "_price": 0.0 },
+    "chilliconcarne":     { "name": "Chilli con Carne",      "categories": [], "_price": 0.0 },
+    "bbqkebabs":          { "name": "BBQ Kebabs",            "categories": [ "meat" ], "_price": 0.0 },
+
+    "risotto":          { "name": "Risotto",            "categories": [], "_price": 0.0 },
+    "sausagecasserole": { "name": "Sausage Casserole",  "categories": [ "meat" ], "_price": 0.0 },
+
+    "tuna":             { "name": "Tuna",               "categories": [ "meat" ], "_price": 0.0 },
+    "roastchicken":     { "name": "Roast Chicken",      "categories": [ "meat" ], "_price": 0.0 },
+    "roastbeef":        { "name": "Roast Beef",         "categories": [ "meat" ], "_price": 0.0 },
+    "lamb":             { "name": "Lamb",               "categories": [ "meat" ], "_price": 0.0 },
+    "cod":              { "name": "Cod",                "categories": [ "meat" ], "_price": 0.0 },
+    "roastpork":        { "name": "Roast Pork",         "categories": [ "meat" ], "_price": 0.0 },
+    "roastgammon":      { "name": "Roast Gammon",       "categories": [ "meat" ], "_price": 0.0 },
+    "breadedchicken":   { "name": "Breaded Chicken",    "categories": [ "meat" ], "_price": 0.0 },
+    "duck":             { "name": "Duck",               "categories": [ "meat" ], "_price": 0.0 },
+    "roastham":         { "name": "Roast Ham",          "categories": [ "meat" ], "_price": 0.0 },
+    "chicken":          { "name": "Chicken Breast",     "categories": [ "meat" ], "_price": 0.0 },
+    "realmince":        { "name": "Real Mince",         "categories": [ "meat" ], "_price": 0.0 },
+    "quornmince":       { "name": "Quorn Mince",        "categories": [], "_price": 0.0 },
+    "bellypork":        { "name": "Belly Pork",         "categories": [ "meat" ], "_price": 0.0 },
+    "bacon":            { "name": "Bacon",              "categories": [ "meat" ], "_price": 0.0 },
+    "bacon&sausage":    { "name": "Bacon & Sausage",    "categories": [ "meat" ], "_price": 0.0 },
+    "salmon":           { "name": "Salmon",             "categories": [ "meat" ], "_price": 0.0 },
+    "burger":           { "name": "Burger",             "categories": [ "meat" ], "_price": 0.0 },
+    "greekporkchops":   { "name": "Greek Pork Chops",   "categories": [ "meat" ], "_price": 0.0 },
+    "paella":           { "name": "Paella",             "categories": [], "_price": 0.0 },
+    "omlette":          { "name": "Omlette",            "categories": [], "_price": 0.0 },
+    "breakfastdinner":  { "name": "Breakfast Dinner",   "categories": [], "_price": 0.0 },
+    "lambkoftas":       { "name": "Lamb Koftas",        "categories": [ "meat" ], "_price": 0.0 },
+
+    "pasata":           { "name": "Pasata",             "categories": [], "_price": 0.0 },
+    "stirfry":          { "name": "Stirfry",            "categories": [], "_price": 0.0 },
+    "tikkamasala":      { "name": "Tikka Masala Sauce", "categories": [], "_price": 0.0 },
+    "roganjosh":        { "name": "Rogan Josh Sauce",   "categories": [], "_price": 0.0 },
+    "bakedbeans":       { "name": "Baked Beans",        "categories": [], "_price": 0.0 },
+
+    "rice":             { "name": "Rice",               "categories": [], "_price": 0.0 },
+    "pearlbarley":      { "name": "Pearl Barley",       "categories": [], "_price": 0.0 },
+    "roastpots":        { "name": "Roast Potatoes",     "categories": [], "_price": 0.0 },
+    "sautepots":        { "name": "Sautéed Potatoes",   "categories": [], "_price": 0.0 },
+    "newpots":          { "name": "New Potatoes",       "categories": [], "_price": 0.0 },
+    "mash":             { "name": "Mashed Potatoes",    "categories": [], "_price": 0.0 },
+    "jacketpots":       { "name": "Jacket Potatoes",    "categories": [], "_price": 0.0 },
+    "hashbrowns":       { "name": "Hash Browns",        "categories": [], "_price": 0.0 },
+    "chips":            { "name": "Chips",              "categories": [], "_price": 0.0 },
+
+    "poppadoms":        { "name": "Poppadoms",          "categories": [], "_price": 0.0 },
+    "naan":             { "name": "Naan Bread",         "categories": [], "_price": 0.0 },
+    "pitta":            { "name": "Pitta Bread",        "categories": [], "_price": 0.0 },
+    "peas&sweetcorn":   { "name": "Peas & Sweetcorn",   "categories": [], "_price": 0.0 },
+    "babysweetcorn":    { "name": "Baby Sweetcorn",     "categories": [], "_price": 0.0 }
+  },
+  "recipes": [
+    {
+      "main":            [ "chicken&baconpasta" ],
+      "mandatory_side1": [], "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "spaghettibolognese" ],
+      "mandatory_side1": [], "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "spaghettimeatballs" ],
+      "mandatory_side1": [], "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "tunapasta" ],
+      "mandatory_side1": [], "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "chicken", "lamb" ],
+      "mandatory_side1": [ "tikkamasala", "roganjosh" ],
+      "mandatory_side2": [ "rice" ],
+      "mandatory_side3": [],
+      "optional_sides":  [ "naan", "poppadoms" ]
+    },
+    {
+      "main":            [ "stirfry" ],
+      "mandatory_side1": [ "chicken", "bellypork" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "salmon" ],
+      "mandatory_side1": [ "newpots" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "burger" ],
+      "mandatory_side1": [ "chips" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "greekporkchops" ],
+      "mandatory_side1": [ "sautepots" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "paella" ],
+      "mandatory_side1": [ "rice", "pearlbarley" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "chilliconcarne" ],
+      "mandatory_side1": [ "realmince", "quornmince" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "bbqkebabs" ],
+      "mandatory_side1": [ "jacketpots" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "omlette" ],
+      "mandatory_side1": [ "chips" ],
+      "mandatory_side2": [ "bakedbeans" ],
+      "mandatory_side3": [],
+      "optional_sides":  [ "bacon" ]
+    },
+    {
+      "main":            [ "breakfastdinner" ],
+      "mandatory_side1": [ "bacon&sausage" ],
+      "mandatory_side2": [ "chips" ],
+      "mandatory_side3": [ "bakedbeans" ],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "macaronicheese" ],
+      "mandatory_side1": [], "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "cottagepie" ],
+      "mandatory_side1": [ "realmince", "quornmince" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "cod", "breadedchicken" ],
+      "mandatory_side1": [ "chips" ],
+      "mandatory_side2": [],
+      "mandatory_side3": [],
+      "optional_sides":  [ "peas&sweetcorn", "babysweetcorn" ]
+    },
+    {
+      "main":            [ "sausagecasserole" ],
+      "mandatory_side1": [], "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "lambkoftas" ],
+      "mandatory_side1": [ "pitta" ],
+      "mandatory_side2": [], "mandatory_side3": [],
+      "optional_sides":  []
+    },
+    {
+      "main":            [ "roastchicken", "roastbeef", "roastham", "roastgammon", "roastpork" ],
+      "mandatory_side1": [ "roastpots", "mash" ],
+      "mandatory_side2": [],
+      "mandatory_side3": [],
+      "optional_sides":  []
+    }
+  ]
+}
