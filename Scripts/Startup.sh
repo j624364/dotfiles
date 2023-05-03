@@ -22,3 +22,7 @@ setxkbmap gb
 # turn numlock on
 numlockx on
 
+# from i3
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+dex --autostart --environment i3
+
