@@ -182,6 +182,9 @@
 
 (remove-hook 'doom-first-buffer-hook #'smartparents-global-mode)
 
+(setq-default explicit-shell-file-name "/usr/bin/fish")
+(setq-default shell-file-name "/usr/bin/fish")
+
 ;; doom doesnt have org-superstar, which i guess ill have to get at some point
 ;; (org-superstar-remove-leading-stars t)
 ;; (org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●"))
