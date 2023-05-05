@@ -185,6 +185,8 @@
 (setq-default explicit-shell-file-name "/usr/bin/fish")
 (setq-default shell-file-name "/usr/bin/fish")
 
+(setq projectile-project-search-path '("~/Repos/"))
+
 ;; doom doesnt have org-superstar, which i guess ill have to get at some point
 ;; (org-superstar-remove-leading-stars t)
 ;; (org-superstar-headline-bullets-list '("◉" "○" "●" "○" "●" "○" "●"))
