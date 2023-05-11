@@ -17,6 +17,9 @@ if status is-interactive
 
 	alias py="pypy3"
 
+	alias pipes="pipes.sh -K -p 10 -r 0"
+	alias pipeslow="pipes.sh -K -p 5 -r 0 -f 50"
+
 	set -gx PATH $PATH ~/opt/cross/bin ~/.dotnet/tools
 	set EDITOR nvim /usr/bin/nvim
 
