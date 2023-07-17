@@ -20,7 +20,7 @@ if status is-interactive
 	alias pipes="pipes.sh -K -p 10 -r 0"
 	alias pipeslow="pipes.sh -K -p 5 -r 0 -f 50"
 
-	set -gx PATH $PATH ~/opt/cross/bin ~/.dotnet/tools
+	set -gx PATH $PATH ~/opt/cross/bin ~/.dotnet/tools ~/.cargo/bin
 	set EDITOR nvim /usr/bin/nvim
 
 	set HTTP_PROXY ""
