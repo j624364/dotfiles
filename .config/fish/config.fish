@@ -25,4 +25,6 @@ if status is-interactive
 
 	set HTTP_PROXY ""
 	set HTTPS_PROXY ""
+
+	alias αγγ="setxkbmap gb"
 end
