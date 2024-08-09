@@ -104,4 +104,5 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias so="source ~/.zshrc"
+alias j="jump"
 
