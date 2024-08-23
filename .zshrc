@@ -105,5 +105,6 @@ fi
 
 alias so="source ~/.zshrc"
 alias j="jump"
+alias gs="git status"
 
 [ -f "/home/joe/.ghcup/env" ] && . "/home/joe/.ghcup/env" # ghcup-env
