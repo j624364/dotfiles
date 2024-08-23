@@ -106,3 +106,4 @@ fi
 alias so="source ~/.zshrc"
 alias j="jump"
 
+[ -f "/home/joe/.ghcup/env" ] && . "/home/joe/.ghcup/env" # ghcup-env
