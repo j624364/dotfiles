@@ -3,105 +3,6 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
-(when (get-buffer "*window-manager*")
-  (kill-buffer "*window-manager*"))
-(when (get-buffer "*window-manager-error*")
-  (kill-buffer "*window-manager-error*"))
-(when (executable-find "wmctrl")
-  (shell-command "wmctrl -m ; echo $?" "*window-manager*" "*window-manager-error*"))
-
-(when (and (get-buffer "*window-manager-error*")
-           (eq window-system 'x))
-
-  (require 'exwm)
-
-  (setq exwm-input-global-keys
-        `(([?\s-r] . exwm-reset)
-
-          ;; Basic splitting
-          ;; ([?\s-v] . evil-window-vsplit)
-          ;; ([?\s-z] . evil-window-split)
-
-          ;; Essential programs
-          ([?\s-d] . dmenu)
-          ([?\s-W] . exwm-workspace-swap)
-
-          ;; Killing buffers and windows
-          ;; ([?\s-b] . projectile-ibuffer)
-          ;; ([?\s-B] . kill-current-buffer)
-          ([?\s-Q] . +workspace/close-window-or-workspace)
-
-          ;; Change window focus with super+hjkl
-          ([?\s-h] . evil-window-left)
-          ([?\s-j] . evil-window-next)
-          ([?\s-k] . evil-window-prev)
-          ([?\s-l] . evil-window-right)
-
-          ;; Move window focus with super+shift+hjkl
-          ([?\s-H] . +evil/window-move-left)
-          ([?\s-J] . +evil/window-move-down)
-          ([?\s-K] . +evil/window-move-up)
-          ([?\s-L] . +evil/window-move-right)
-
-          ;; Managing workspaces
-          ([?\s-w] . exwm-workspace-switch)
-          ([?\s-W] . exwm-workspace-swap)
-          ([?\s-\C-w] . exwm-workspace-move)
-
-          ([?\s-f] . exwm-floating-toggle-floating)
-          ([?\s-m] . exwm-layout-toggle-mode-line)
-          ([f11] . exwm-layout-toggle-fullscreen)
-
-          ;; Switch to workspace
-          ([?\s-0] . (lambda () (interactive) (exwm-workspace-switch-create 0)))
-          ([?\s-1] . (lambda () (interactive) (exwm-workspace-switch-create 1)))
-          ([?\s-2] . (lambda () (interactive) (exwm-workspace-switch-create 2)))
-          ([?\s-3] . (lambda () (interactive) (exwm-workspace-switch-create 3)))
-          ([?\s-4] . (lambda () (interactive) (exwm-workspace-switch-create 4)))
-          ([?\s-5] . (lambda () (interactive) (exwm-workspace-switch-create 5)))
-          ([?\s-6] . (lambda () (interactive) (exwm-workspace-switch-create 6)))
-          ([?\s-7] . (lambda () (interactive) (exwm-workspace-switch-create 7)))
-          ([?\s-8] . (lambda () (interactive) (exwm-workspace-switch-create 8)))
-          ([?\s-9] . (lambda () (interactive) (exwm-workspace-switch-create 9)))
-
-          ;; Move window to workspace
-          ([?\s-\)] . (lambda () (interactive) (exwm-workspace-switch-create 0)))
-          ([?\s-!] . (lambda () (interactive) (exwm-workspace-switch-create 1)))
-          ([?\s-\"] . (lambda () (interactive) (exwm-workspace-switch-create 2)))
-          ([?\s-£] . (lambda () (interactive) (exwm-workspace-switch-create 3)))
-          ([?\s-$] . (lambda () (interactive) (exwm-workspace-switch-create 4)))
-          ([?\s-%] . (lambda () (interactive) (exwm-workspace-switch-create 5)))
-          ([?\s-^] . (lambda () (interactive) (exwm-workspace-switch-create 6)))
-          ([?\s-&] . (lambda () (interactive) (exwm-workspace-switch-create 7)))
-          ([?\s-\*] . (lambda () (interactive) (exwm-workspace-switch-create 8)))
-          ([?\s-\(] . (lambda () (interactive) (exwm-workspace-switch-create 9)))))
-
-  ;; allow window buffers to rename themselves
-  (add-hook 'exwm-update-class-hook
-            (lambda ()
-              (exwm-workspace-rename-buffer exwm-class-name)))
-
-  ;; randr
-
-  (require 'exwm-randr)
-
-  (setq exwm-randr-workspace-monitor-plist '(0 "VGA1"))
-  (add-hook 'exwm-randr-screen-change-hook
-            (lambda ()
-              (start-process-shell-command
-               "xrandr" nil "xrandr --output VGA1 --left-of LVDS1 --auto")))
-
-  (exwm-randr-enable)
-
-  ;; system tray
-
-  (require 'exwm-systemtray)
-  (exwm-systemtray-enable)
-
-  (exwm-enable)
-
-  (start-process-shell-command "Startup" nil "~/Scripts/Startup.sh"))
-
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
 (setq user-full-name "Joe"
@@ -184,8 +85,8 @@
 
 (remove-hook 'doom-first-buffer-hook #'smartparents-global-mode)
 
-(setq-default explicit-shell-file-name "/usr/bin/fish")
-(setq-default shell-file-name "/usr/bin/fish")
+(setq-default explicit-shell-file-name "/usr/bin/zsh")
+(setq-default shell-file-name "/usr/bin/zsh")
 
 (setq projectile-project-search-path '("~/Repos/"))
 
