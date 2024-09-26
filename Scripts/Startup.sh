@@ -2,6 +2,8 @@
 
 # startup apps
 
+flameshot &
+
 # compositor
 picom &
 
