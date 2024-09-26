@@ -8,4 +8,4 @@
 [pull]
 	ff = true
 [core]
-	editor = hx
+	editor = helix
