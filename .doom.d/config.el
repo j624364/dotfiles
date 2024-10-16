@@ -42,6 +42,27 @@
 (setq evil-vsplit-window-right t
       evil-split-window-below t)
 
+;; astro
+(use-package! astro-ts-mode
+  :after treesit-auto
+  :init
+  (when (modulep! +lsp)
+    (add-hook 'astro-ts-mode-hook #'lsp! 'append))
+  :config
+  (global-treesit-auto-mode)
+  (let ((astro-recipe (make-treesit-auto-recipe
+                       :lang 'astro
+                       :ts-mode 'astro-ts-mode
+                       :url "https://github.com/virchau13/tree-sitter-astro"
+                       :revision "master"
+                       :source-dir "src")))
+    (add-to-list 'treesit-auto-recipe-list astro-recipe)))
+
+(set-formatter! 'prettier-astro
+                '("npx" "prettier" "--parser=astro"
+                  (apheleia-formatters-indent "--use-tabs" "--tab-width" 'astro-ts-mode-indent-offset))
+                :modes '(astro-ts-mode))
+
 ;; Add nasm
 (add-to-list 'auto-mode-alist '("\\.nasm\\'" . nasm-mode))
 
