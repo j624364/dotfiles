@@ -32,4 +32,4 @@ sxhkd &
 nmcli radio wifi on
 
 # emacs daemon
-emacs --daemon --with-x-toolkit=lucid &
+#emacs --daemon --with-x-toolkit=lucid &
