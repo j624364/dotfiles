@@ -1,38 +1,52 @@
 #!/usr/bin/python
 
 import subprocess
-import os
-from pathlib import Path
+from dataclasses import dataclass
 
-cachefolder = str(Path.home()) + "/.cache"
-cachefile = cachefolder + "/" + "layout.data"
+@dataclass
+class Language:
+    name: str
+    language_code: str
+    variant: str | None = None
 
-mode = ""
-default_mode = "gb"
+def get_languages() -> list[Language]:
+    return [
+        Language(name = "English", language_code = "gb"),
+        Language(name = "Greek Modern", language_code = "gr"),
+        Language(name = "Greek Polytonic", language_code = "gr", variant="polytonic")
+    ]
 
-def read_cache_file():
-    global mode
+def get_languages_dmenu_stdin(languages: list[Language]) -> str:
+    input = ""
+    for language in languages:
+        input = f"{input}{language.name}\n"
+    return input
 
-    f = open(cachefile, "r")
-    if f.closed:
-        mode = default_mode
-    else:
-        mode = f.read().strip()
+def set_keyboard_layout(language: Language):
+    args = [ "setxkbmap" ]
+    args.append(language.language_code)
 
-def write_cache_file():
-    f = open(cachefile, "w")
-    f.write(mode)
+    if language.variant is not None:
+        args.append("-variant")
+        args.append(language.variant)
 
-def set_mode():
-    subprocess.run([ "setxkbmap", mode ])
+    subprocess.run(args)
 
-read_cache_file()
+def main():
+    languages = get_languages()
+    dmenu_stdin = get_languages_dmenu_stdin(languages)
+    rofi_args = [ "rofi", "-dmenu", "-config", "~/.config/rofi/rofimenu.rasi" ]
+    proc = subprocess.run(rofi_args, input=dmenu_stdin, capture_output=True, text=True)
+    
+    if proc.returncode != 0:
+        return
 
-if mode == "gb":
-    mode = "el"
-else:
-    mode = "gb"
+    output_language_name = proc.stdout.strip()
 
-set_mode()
-write_cache_file()
+    for language in languages:
+        if language.name == output_language_name:
+            set_keyboard_layout(language)
+
+if __name__ == "__main__":
+    main()
 
