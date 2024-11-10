@@ -10,3 +10,6 @@
 [submodule ".config/helix"]
 	path = .config/helix
 	url = https://github.com/j624364/helix
+[submodule ".config/rofi/rofi"]
+	path = .config/rofi/rofi
+	url = https://github.com/dracula/rofi.git
