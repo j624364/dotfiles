@@ -1,2 +1,0 @@
-(system-raw "~/Scripts/bar_continue.sh &")
-(system-raw "nm-applet --sm-disable &")

@@ -2,7 +2,7 @@
 
 while true
 do
-	xsetroot -name "$(~/Scripts/bar.sh)"
+	xsetroot -name "$(~/Scripts/bar/bar.sh)"
 	sleep 1
 done
 

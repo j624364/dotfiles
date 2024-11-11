@@ -11,7 +11,7 @@ echo -n ""
 echo -n ""
 echo "$(LANG=C nmcli d | grep connected  | awk '{print $4}')"
 
-~/Scripts/BatteryCapacity.py
+~/Scripts/bar/BatteryCapacity.py
 
 ~/.config/i3/scripts/volume
 
