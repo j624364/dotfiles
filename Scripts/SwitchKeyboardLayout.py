@@ -3,6 +3,9 @@
 import subprocess
 from dataclasses import dataclass
 
+rofi_path = "/usr/bin/rofi"
+rofi_config_path = "~/.config/rofi/rofimenu.rasi"
+
 @dataclass
 class Language:
     name: str
@@ -33,9 +36,11 @@ def set_keyboard_layout(language: Language):
     subprocess.run(args)
 
 def main():
+    global rofi_path, rofi_config_path
+
     languages = get_languages()
     dmenu_stdin = get_languages_dmenu_stdin(languages)
-    rofi_args = [ "rofi", "-dmenu", "-config", "~/.config/rofi/rofimenu.rasi" ]
+    rofi_args = [ rofi_path, "-dmenu", "-config", rofi_config_path ]
     proc = subprocess.run(rofi_args, input=dmenu_stdin, capture_output=True, text=True)
     
     if proc.returncode != 0:
