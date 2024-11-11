@@ -21,7 +21,8 @@ def get_languages() -> list[Language]:
     return [
         default_language,
         Language(name = "Greek Modern", language_code = "gr"),
-        Language(name = "Greek Polytonic", language_code = "gr", variant="polytonic")
+        Language(name = "Greek Polytonic", language_code = "gr", variant="polytonic"),
+        Language(name = "Shavian (qwerty)", language_code = "shavian", variant="qwerty")
     ]
 
 def get_languages_dmenu_stdin(languages: list[Language]) -> str:
