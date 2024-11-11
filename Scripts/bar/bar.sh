@@ -3,7 +3,9 @@
 echo
 
 echo -n ""
-~/.config/i3/scripts/disk
+~/.config/i3/scripts/disk | firstline
+
+echo " "
 
 echo -n ""
 ~/.config/i3/scripts/memory
