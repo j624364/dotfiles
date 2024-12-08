@@ -110,4 +110,6 @@ alias hx="helix"
 
 alias αγγ="setxkbmap gb"
 
+alias blight="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
+
 [ -f "/home/joe/.ghcup/env" ] && . "/home/joe/.ghcup/env" # ghcup-env
