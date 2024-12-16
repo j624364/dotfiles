@@ -53,6 +53,9 @@ def get_prev_keyboard_layout(languages: list[Language]) -> Language | None:
 
     return None
 
+def set_caps_as_escape():
+    subprocess.run(["setxkbmap", "-option", "caps:escape"])
+
 def set_keyboard_layout(language: Language):
     global cache_file_path
     cache_file = open(cache_file_path, "w")
@@ -70,6 +73,8 @@ def set_keyboard_layout(language: Language):
 
     subprocess.run(args)
     cache_file.close()
+
+    set_caps_as_escape()
 
 def main():
     global default_language
