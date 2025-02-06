@@ -2,10 +2,7 @@
 
 import subprocess
 from dataclasses import dataclass
-from typing import Tuple
-
-rofi_path = "/usr/bin/rofi"
-rofi_config_path = "~/.config/rofi/rofimenu.rasi"
+import rofi
 
 cache_file_path = "/home/joe/.cache/prevkeyboardlayout"
 
@@ -78,7 +75,6 @@ def set_keyboard_layout(language: Language):
 
 def main():
     global default_language
-    global rofi_path, rofi_config_path
 
     languages = get_languages()
 
@@ -86,15 +82,14 @@ def main():
     set_keyboard_layout(default_language)
 
     dmenu_stdin = get_languages_dmenu_stdin(languages)
-    rofi_args = [ rofi_path, "-dmenu", "-config", rofi_config_path ]
-    proc = subprocess.run(rofi_args, input=dmenu_stdin, capture_output=True, text=True)
+    dmenu_stdout = rofi.run_rofi(dmenu_stdin)
     
-    if proc.returncode != 0:
+    if dmenu_stdout == None:
         if prev_keyboard_language is not None:
             set_keyboard_layout(prev_keyboard_language)
         return
 
-    output_language_name = proc.stdout.strip()
+    output_language_name = dmenu_stdout.strip()
 
     for language in languages:
         if language.name == output_language_name:
