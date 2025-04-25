@@ -108,6 +108,8 @@ alias j="jump"
 alias gs="git status"
 alias hx="helix"
 
+alias xclear="clear -T xterm"
+
 alias αγγ="setxkbmap gb"
 
 alias blight="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
