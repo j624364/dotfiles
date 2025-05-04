@@ -115,3 +115,12 @@ alias αγγ="setxkbmap gb"
 alias blight="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 
 [ -f "/home/joe/.ghcup/env" ] && . "/home/joe/.ghcup/env" # ghcup-env
+
+# looses path info for some reason?
+# not sure why but ill eventually get it working
+watchcurrentdir() {
+  inotifywait -m $1 -e modify -e delete -e create | 
+    while read path action file; do
+      eval $2
+    done
+}
