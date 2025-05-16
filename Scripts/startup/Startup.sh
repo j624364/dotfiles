@@ -7,6 +7,9 @@ flameshot &
 # compositor
 picom &
 
+# nightlight
+redshift -l 53:-1.2 &
+
 # wallpapers
 nitrogen --restore &
 
