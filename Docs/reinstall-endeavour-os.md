@@ -20,3 +20,21 @@
 - Log into [GitHub](https://github.com/)
 - Clone dotfiles
 - Run install script `~/dotfiles/Scripts/install/endeavouros_install.sh`
+
+## Firefox
+
+Add extensions:
+
+  - Tree Style Tab
+  - uBlock Origin
+  - Enhancer for YouTube™
+  - Audio Equalizer
+  - Video DownloadHelper
+  - Dracula (Theme
+
+Toggle:
+
+- Ctrl+Tab cycles through tabs in recently used order
+- Sponsored shortcuts
+- Sponsored stories
+
