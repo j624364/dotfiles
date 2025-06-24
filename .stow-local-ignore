@@ -1,0 +1,8 @@
+Backgrounds/
+Docs/
+
+.git/
+.gitignore
+.gitmodules
+
+Makefile
