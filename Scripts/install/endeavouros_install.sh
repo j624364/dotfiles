@@ -30,8 +30,10 @@ sudo pacman -S network-manager-applet flameshot picom redshift nitrogen sxhkd ro
 sudo pacman -S npm gopls ghc haskell-language-server
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
-cargo install bat loc
 cargo install cargo-leptos --locked
+
+sudo pacman -S bpytop
+cargo install bat loc
 
 # now go clone repos, etc
 sudo pacman -S cronie --noconfirm
