@@ -42,5 +42,8 @@ sudo pacman -S cronie --noconfirm
 
 sudo pacman -S spotify-launcher --noconfirm
 
+mkdir ~/.cache/
+touch ~/.cache/prevkeyboardlayout
+
 # set wallpaper with gui
 nitrogen
