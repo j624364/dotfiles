@@ -2,20 +2,20 @@
 
 echo
 
-echo -n ""
-~/.config/i3/scripts/disk | firstline
+#echo -n ""
+#~/.config/i3/scripts/disk | firstline
 
-echo " "
+#echo " "
 
-echo -n ""
-~/.config/i3/scripts/memory
+#echo -n ""
+#~/.config/i3/scripts/memory
 
-echo -n ""
+#echo -n ""
 echo "$(LANG=C nmcli d | grep connected  | awk '{print $4}')"
 
-~/Scripts/bar/BatteryCapacity.py
+#~/Scripts/bar/BatteryCapacity.py
 
-~/.config/i3/scripts/volume
+#~/.config/i3/scripts/volume
 
 echo "::"
 
