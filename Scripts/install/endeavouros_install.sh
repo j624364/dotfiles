@@ -33,7 +33,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 cargo install cargo-leptos --locked
 
 sudo pacman -S bpytop
-cargo install bat loc
+cargo install bat loc bacon
 
 # now go clone repos, etc
 sudo pacman -S cronie --noconfirm
