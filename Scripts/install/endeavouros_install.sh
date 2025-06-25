@@ -24,7 +24,7 @@ cd ~/Repos
 git clone https://github.com/j624364/dwm.git
 cd dwm
 make && make install && sudo make install
-sudo pacman -S network-manager-applet flameshot picom redshift nitrogen sxhkd rofi xorg-xsetroot --noconfirm
+sudo pacman -S network-manager-applet flameshot picom redshift nitrogen sxhkd rofi xorg-xsetroot dunst --noconfirm
 
 # setup programming compilers & lsps
 sudo pacman -S npm gopls ghc haskell-language-server
