@@ -114,6 +114,8 @@ alias αγγ="setxkbmap gb"
 
 alias blight="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 
+export DISABLE_UPDATE_PROMPT=true
+
 [ -f "/home/joe/.ghcup/env" ] && . "/home/joe/.ghcup/env" # ghcup-env
 
 # looses path info for some reason?
