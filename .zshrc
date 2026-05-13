@@ -112,6 +112,7 @@ alias xclear="clear -T xterm"
 
 alias αγγ="setxkbmap gb"
 
+alias bpytop="python3 ~/.scripts/bpytop/bpytop.py"
 alias blight="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 
 export DISABLE_UPDATE_PROMPT=true
