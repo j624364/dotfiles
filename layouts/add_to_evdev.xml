@@ -1,0 +1,35 @@
+    <layout>
+      <configItem>
+        <name>shavian</name>
+        <shortDescription>sh</shortDescription>
+        <description>English (Shavian)</description>
+		<languageList>
+          <iso639Id>eng</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>iykury</name>
+            <description>English (Shavian, Iykury)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>igc</name>
+            <description>English (Shavian, Imperial)</description>
+          </configItem>
+        </variant>
+        <variant>
+          <configItem>
+            <name>qwerty</name>
+            <description>English (Shavian, QWERTY)</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+
+
+
+
+	(put before </layoutList>)
