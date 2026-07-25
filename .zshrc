@@ -117,8 +117,6 @@ alias blight="sudo vim /sys/class/backlight/amdgpu_bl1/brightness"
 
 export DISABLE_UPDATE_PROMPT=true
 
-[ -f "/home/joe/.ghcup/env" ] && . "/home/joe/.ghcup/env" # ghcup-env
-
 # looses path info for some reason?
 # not sure why but ill eventually get it working
 watchcurrentdir() {
@@ -127,3 +125,15 @@ watchcurrentdir() {
       eval $2
     done
 }
+
+# BEGIN opam configuration
+# This is useful if you're using opam as it adds:
+#   - the correct directories to the PATH
+#   - auto-completion for the opam binary
+# This section can be safely removed at any time if needed.
+[[ ! -r '/home/holly/.opam/opam-init/init.zsh' ]] || source '/home/holly/.opam/opam-init/init.zsh' > /dev/null 2> /dev/null
+# END opam configuration
+
+[ -f "/home/holly/.ghcup/env" ] && . "/home/holly/.ghcup/env" # ghcup-env
+
+export PATH=$HOME/.ghcup/bin:$HOME/.cabal/bin:$PATH
