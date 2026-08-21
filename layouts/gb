@@ -25,6 +25,7 @@ xkb_symbols "basic" {
 
     key <AD01>	{ [         q,          Q,        U2211,        U220F ]	};
     key <AD03>	{ [         e,          E,           oe,           OE ]	};
+    key <AD06>	{ [         y,          Y,    leftarrow,        U0259 ]	};
 
     key <AC08>	{ [         k,          K,          kra,        UA7DB ]	};
     key <AC11>	{ [apostrophe,         at, dead_circumflex, dead_caron]	};
