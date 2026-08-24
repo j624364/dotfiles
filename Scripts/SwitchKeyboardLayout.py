@@ -17,8 +17,9 @@ default_language = Language(name = "English", language_code = "gb")
 def get_languages() -> list[Language]:
     return [
         default_language,
-        Language(name = "Greek Modern", language_code = "gr"),
         Language(name = "Greek Polytonic", language_code = "gr", variant="polytonic"),
+        Language(name = "Greek Modern", language_code = "gr"),
+        Language(name = "Coptic", language_code = "eg", variant="cop"),
         Language(name = "Cyrillic", language_code = "cyr"),
         Language(name = "Levantic", language_code = "levant"),
         Language(name = "Shavian (qwerty)", language_code = "shavian", variant="qwerty")
