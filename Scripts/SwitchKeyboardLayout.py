@@ -71,6 +71,9 @@ def set_keyboard_layout(language: Language):
         cache_file.write("\n")
         cache_file.write(language.variant)
 
+    args.append("-option")
+    args.append("lv3:ralt_switch")
+
     subprocess.run(args)
     cache_file.close()
 
