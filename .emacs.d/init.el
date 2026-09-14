@@ -15,6 +15,7 @@
       visible-bell nil)
 
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "C-c C-c") 'compile)
 
 ;; cua-mode for C-c, C-x & C-v for copy, cut and paste
 (cua-mode)
@@ -23,6 +24,8 @@
 (scroll-bar-mode -1)
 (tool-bar-mode -1)
 (menu-bar-mode -1) ; keep for a bit to learn some keybindings
+
+(setq mouse-wheel-progressive-speed nil)
 
 ;(set-fringe-mode 10)
 
@@ -61,6 +64,10 @@
 (load-theme 'dracula t)
 ;; (use-package doom-themes)
 
+
+;; General Editor Stuff
+
+
 (use-package which-key
   :init (which-key-mode)
   :diminish which-key-mode
@@ -98,6 +105,10 @@
   :config
   (setq ivy-initial-innputs-alist nil))
 
+(use-package counsel-projectile
+  :after projectile
+  :config (counsel-projectile-mode))
+
 (use-package helpful
   :custom
   (counsel-describe-function-function #'helpful-callable)
@@ -133,7 +144,7 @@
 (evil-mode 1) ; should have ran in previous :config but doesnt for some reason
 
 (use-package evil-collection
-  :after evil
+  :after evil magit
   :config
   (evil-collection-init))
 
@@ -158,6 +169,22 @@
 (use-package lsp-ui :commands lsp-ui-mode)
 (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
 
+(use-package projectile
+  :config (projectile-mode)
+  :bind-keymap
+  ("C-c p" . projectile-command-map)
+  :init
+  (when (file-directory-p "~/Repos"))
+  (setq projectile-switch-project-action #'projectile-dired))
+
+(use-package magit
+  :custom
+  (magit-display-buffer-function #'magit-display-buffer-same-window-except-diff-v1))
+
+
+; Syntax Highlighting
+
+
 (use-package tree-sitter)
 (use-package tree-sitter-langs)
 (global-tree-sitter-mode)
@@ -175,3 +202,10 @@
 	  rust-cargo-bin (concat dot-cargo-bin "cargo")
 	  rust-format-on-save t)))
 
+(use-package diminish
+  :config
+  (diminish 'eldoc-mode)
+  (diminish 'which-key-mode)
+  (diminish 'ivy-mode)
+  (diminish 'tree-sitter-mode)
+  (diminish 'projectile-mode))
