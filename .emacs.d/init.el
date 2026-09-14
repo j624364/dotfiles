@@ -15,7 +15,7 @@
       visible-bell nil)
 
 (global-set-key (kbd "<escape>") 'keyboard-escape-quit)
-(global-set-key (kbd "C-c C-c") 'compile)
+(global-set-key (kbd "C-c c") 'compile)
 
 ;; cua-mode for C-c, C-x & C-v for copy, cut and paste
 (cua-mode)
