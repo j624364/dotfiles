@@ -198,8 +198,8 @@
 (use-package rust-mode
   :config
   (let ((dot-cargo-bin (expand-file-name "~/.cargo/bin")))
-    (setq rust-rustfmt-bin (concat dot-cargo-bin "rustfmt")
-	  rust-cargo-bin (concat dot-cargo-bin "cargo")
+    (setq rust-rustfmt-bin (concat dot-cargo-bin "/rustfmt")
+	  rust-cargo-bin (concat dot-cargo-bin "/cargo")
 	  rust-format-on-save t)))
 
 (use-package diminish
