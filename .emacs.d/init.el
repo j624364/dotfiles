@@ -18,7 +18,7 @@
 (global-set-key (kbd "C-c c") 'compile)
 
 ;; cua-mode for C-c, C-x & C-v for copy, cut and paste
-(cua-mode)
+; (cua-mode)
 
 ;; Remove some of the base toolbars
 (scroll-bar-mode -1)
