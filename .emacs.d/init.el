@@ -143,6 +143,11 @@
   (evil-initialize))
 (evil-mode 1) ; should have ran in previous :config but doesnt for some reason
 
+(use-package evil-easymotion
+  :after evil
+  :config
+  (evilem-default-keybindings "C-c w"))
+
 (use-package evil-collection
   :after evil magit
   :config
