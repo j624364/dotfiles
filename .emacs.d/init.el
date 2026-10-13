@@ -1,4 +1,5 @@
-;; Commands: C-x for general commands, C-c for user and mode commands
+;; -*- lexical-binding: t; -*-
+;; Commands: C-x for general commands, C-c for user and mode commands  
 ;; Use C-g for exiting commands. C-h are for help commands.
 
 ;; Use C-x C-e or C-M-x to evaluate an elisp expression.
