@@ -194,6 +194,8 @@
 (use-package tree-sitter-langs)
 (global-tree-sitter-mode)
 
+(tree-sitter-require 'gleam)
+
 (use-package gleam-ts-mode
   :after tree-sitter
   :mode (rx ".gleam" eos))
