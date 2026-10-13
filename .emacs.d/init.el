@@ -29,8 +29,9 @@
 
 ;(set-fringe-mode 10)
 
-(setq scroll-margin 5)
-(setq scroll-conservatively 5)
+(add-hook 'term-mode (lambda ()
+		       (setq scroll-margin 0)
+		       (setq scroll-conservatively 0)))
 
  ;; Use M-n and M-p to scroll between them
 (setq history-length 50)
