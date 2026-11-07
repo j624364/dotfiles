@@ -160,6 +160,9 @@
 (global-display-line-numbers-mode +1)
 (column-number-mode)
 
+(setq evil-vsplit-window-right t
+      evil-split-window-below t)
+
 (add-hook 'gleam-ts-mode-hook #'lsp)
 (add-hook 'rust-mode-hook #'lsp)
 (use-package lsp-mode
