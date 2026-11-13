@@ -1,0 +1,57 @@
+partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    name[Group1]= "Manichaean";
+
+    key <TLDE> { [ U10AE5, U10AE6      ] }; // ` : ¨,  ̤
+    key <AE01> { [ 1,      exclam,     U10AEB, U10AEB ] }; // 1 : 1 ! 𐫫
+    key <AE02> { [ 2,      quotedbl,   U10AEC, U10AEC ] }; // 2 : 2 " 𐫬
+    key <AE03> { [ 3,      numbersign, U10AED, U10AED ] }; // 3 : 3 # 𐫭
+    key <AE04> { [ 4,      question,   U10AEE, U10AEE ] }; // 4 : 4 $ 𐫮
+    key <AE05> { [ 5,      percent,    U10AEF, U10AEF ] }; // 5 : 5 % 𐫯
+    key <AE06> { [ 6,      asciicircum ] }; // 6 : 6 ^
+    key <AE07> { [ 7,      ampersand   ] }; // 7 : 7 &
+    key <AE08> { [ 8,      asterisk    ] }; // 8 : 8 *
+    key <AE09> { [ 9,      parenleft   ] }; // 9 : 9 (
+    key <AE10> { [ 0,      parenright  ] }; // 0 : 0 )
+    key <AE11> { [ minus,  underscore  ] };
+    key <AE12> { [ equal,  plus        ] };
+ 
+    key <AD01> { [ U10ADE, U10AE0, U10ADF, U10AE0   ] }; // q : 𐫞 𐫟 𐫠
+    key <AD02> { [ U10AC7, U10AC8, U10AC7, U10AC8   ] }; // w : 𐫇 𐫈
+    key <AD03> { [ U10AC6, U10AC6, U10AC6, U10AC6   ] }; // e : 𐫆
+    key <AD04> { [ U10AE1, U10AE1, U10AE1, U10AE1   ] }; // r : 𐫡
+    key <AD05> { [ U10AE4, U10AE4, U10AE4, U10AE4   ] }; // t : 𐫤
+    key <AD06> { [ U10AD9, U10ADA, U10AD9, U10ADA   ] }; // y : 𐫙 𐫚
+    key <AD07> { [ U10ACE, U10ACE, U10ACE, U10ACE   ] }; // u : 𐫎
+    key <AD08> { [ U10ACF, U10ACF, U10ACF, U10ACF   ] }; // i : 𐫏
+    key <AD09> { [ U10AC7, U10AC7, U10AC7, U10AC7   ] }; // o : 𐫇
+    key <AD10> { [ U10ADB, U10ADC, U10ADB, U10ADC   ] }; // p : 𐫛, 𐫜
+    key <AD11> { [ bracketleft,  braceleft          ] };
+    key <AD12> { [ bracketright, braceright         ] };
+ 
+    key <AC01> { [ U10AC0, U10AC0, U10AC0, U10AC0   ] }; // a : 𐫀
+    key <AC02> { [ U10AD8, U10AD8, U10AD8, U10AD8   ] }; // s : 𐫘
+    key <AC03> { [ U10AC5, U10AC5, U10AC5, U10AC5   ] }; // d : 𐫅
+    key <AC04> { [ U10AD4, U10AD5, U10AD4, U10AD5   ] }; // f : 𐫔 𐫕
+    key <AC05> { [ U10AC3, U10AC4, U10AC3, U10AC4   ] }; // g : 𐫃 𐫄
+    key <AC06> { [ U10AC6, U10AC6, U10AC6, U10AC6   ] }; // h : 𐫆
+    key <AC07> { [ U10ACB, U10ACC, U10ACB, U10ACC   ] }; // j : 𐫋 𐫌
+    key <AC08> { [ U10AD0, U10AD2, U10AD1, U10AD1   ] }; // k : 𐫐 𐫑 𐫒
+    key <AC09> { [ U10AD3, U10AD3, U10AD3, U10AD3   ] }; // l : 𐫓
+    key <AC10> { [ semicolon,  colon                ] };
+    key <AC11> { [ apostrophe, quotedbl             ] };
+    key <TLDE> { [ grave,      asciitilde           ] };
+ 
+    key <AB01> { [ U10AC9, U10ACA, U10AC9, U10ACA   ] }; // z : 𐫉 𐫊
+    key <AB02> { [ U10ACD, U10ACD, U10ACD, U10ACD   ] }; // x : 𐫍
+    key <AB03> { [ U10ADD, U10ADD, U10ADD, U10ADD   ] }; // c : 𐫝
+    key <AB04> { [ U10AE2, U10AE3, U10AE2, U10AE3   ] }; // v : 𐫢 𐫣
+    key <AB05> { [ U10AC0, U10AC0, U10AC2, U10AC2   ] }; // b : 𐫁 𐫂
+    key <AB06> { [ U10AD7, U10AD7, U10AD7, U10AD7   ] }; // n : 𐫗
+    key <AB07> { [ U10AD6, U10AD6, U10AD6, U10AD6   ] }; // m : 𐫖
+    key <AB08> { [ U10AF4, U10AF3, comma,  less     ] }; // , : 𐫴 𐫳
+    key <AB09> { [ U10AF5, U10AF2, period, greater  ] }; // . : 𐫵 𐫲
+    key <AB10> { [ U10AF1, U10AF0, slash,  question ] }; // / : 𐫱 𐫰
+};
+

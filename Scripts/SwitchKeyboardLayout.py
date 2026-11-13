@@ -22,6 +22,7 @@ def get_languages() -> list[Language]:
         Language(name = "Coptic", language_code = "eg", variant="cop"),
         Language(name = "Cyrillic", language_code = "cyr"),
         Language(name = "Levantic", language_code = "levant"),
+        Language(name = "Manichaean", language_code = "mani", variant="basic"),
         Language(name = "Shavian (qwerty)", language_code = "shavian", variant="qwerty")
     ]
 

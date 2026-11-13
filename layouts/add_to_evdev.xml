@@ -1,5 +1,18 @@
     <layout>
       <configItem>
+        <name>mani</name>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>basic</name>
+            <description>Manichaean</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>
+    <layout>
+      <configItem>
         <name>shavian</name>
         <shortDescription>sh</shortDescription>
         <description>English (Shavian)</description>
