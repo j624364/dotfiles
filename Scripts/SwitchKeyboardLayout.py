@@ -19,7 +19,7 @@ def get_languages() -> list[Language]:
         default_language,
         Language(name = "Greek Polytonic [poly,gr]", language_code = "gr", variant="polytonic"),
         Language(name = "Greek Modern [gr]", language_code = "gr"),
-        Language(name = "Coptic [cop]", language_code = "eg", variant="cop"),
+        Language(name = "Coptic [cop]", language_code = "eg", variant="copgr"),
         Language(name = "Cyrillic [cyr]", language_code = "cyr"),
         Language(name = "Levantic [lev]", language_code = "levant"),
         Language(name = "Manichaean [mani]", language_code = "mani", variant="basic"),
